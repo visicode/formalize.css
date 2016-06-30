@@ -1,11 +1,17 @@
 /*! formalize.css v0.0.1 | MIT License | github.com/yapaslfeu/formalize.css */
 
+/* To include after normalize.css (https://github.com/necolas/normalize.css)
+   ========================================================================== */
+
 /**
  * n. Comment.
  */
 
-a:focus {
-	outline: 1px dotted black;
+button,
+input:not([type="range"]):not([type="file"]):not([type="image"]),
+select,
+textarea {
+	border: 1px solid #c0c0c0;
 }
 [type="color"] {
 	background-color: #fff;
@@ -14,32 +20,8 @@ a:focus {
 	background-color: transparent;
 }
 [type="image"] {
-	display: inline-block;		/* Firefox */
-}
-[type="search"] {
-	-webkit-appearance: none;		/* iPhone */
-}
-select {
-	-webkit-appearance: menulist-button;	/* Mac Aqua off */
-}
-@supports (-ms-accelerator:true) {
-	select {
-		-webkit-appearance: menulist;		/* Revert for Edge */
-	}
-}
-textarea {
-	padding: 1px;
-	-webkit-appearance: textfield;		/* Safari */
-}
-:-ms-input-placeholder {
-	color: inherit;
-	opacity: 0.54;		/* /!\ Applied to whole input */
-}
-button,
-input:not([type="range"]):not([type="file"]):not([type="image"]),
-select,
-textarea {
-	border: 1px solid #c0c0c0;
+	display: inline-block;		/* Firefox when empty */
+	box-sizing: border-box;
 }
 button,
 html [type="button"],
@@ -66,6 +48,7 @@ html [type="button"],
 ::-ms-browse {
 	border: 1px solid #c0c0c0;
 }
+/* Focus */
 input:focus,
 textarea:focus {
 	outline-width: 0;
@@ -102,6 +85,7 @@ html [type="button"]:focus,
 :focus::-ms-browse {
 	outline: 1px dotted #000;
 }
+/* Hover */
 button:hover,
 html [type="button"]:hover,
 [type="reset"]:hover,
