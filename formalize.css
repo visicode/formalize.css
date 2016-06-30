@@ -19,10 +19,6 @@ textarea {
 [type="file"] {
 	background-color: transparent;
 }
-[type="image"] {
-	display: inline-block;		/* Firefox when empty */
-	box-sizing: border-box;
-}
 button,
 html [type="button"],
 [type="reset"],
