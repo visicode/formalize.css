@@ -20,6 +20,13 @@ textarea {
 	background-color: transparent;
 }
 button,
+[type="search"],
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+	box-sizing: content-box;
+}
+button,
 html [type="button"],
 [type="reset"],
 [type="submit"] {
