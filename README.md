@@ -22,4 +22,4 @@
 
 ## Acknowledgements
 
-Formalize.css is a project by [Alexandre Gastaud](https://github.com/yapaslfeu), inspired by the [normalize.css project](https://github.com/necolas/normalize.css) by [Nicolas Gallagher](https://github.com/necolas) and [Jonathan Neal](https://github.com/jonathantneal).
+Formalize.css is a project by [Alexandre Gastaud](https://github.com/yapaslfeu), inspired by the [normalize.css](https://github.com/necolas/normalize.css) project created by [Nicolas Gallagher](https://github.com/necolas) and [Jonathan Neal](https://github.com/jonathantneal).
