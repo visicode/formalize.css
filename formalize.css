@@ -1,0 +1,85 @@
+/*! formalize.css v0.0.1 | MIT License | github.com/yapaslfeu/formalize.css */
+
+/**
+ * n. Comment.
+ */
+
+button,
+input:not([type="range"]):not([type="file"]):not([type="image"]),
+select,
+textarea {
+	border: 1px solid #c0c0c0;
+}
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+	background-color: #e1e1e1;
+}
+::-webkit-color-swatch {
+	border: 0;
+}
+::-moz-color-swatch {
+	border: 0;
+}
+::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+::-moz-color-swatch-wrapper {
+	padding: 0;
+}
+::-webkit-file-upload-button {
+	border: 1px solid #c0c0c0;
+	background-color: #e1e1e1;
+}
+::-ms-browse {
+	border: 1px solid #c0c0c0;
+}
+input:focus,
+textarea:focus {
+	outline-width: 0;
+}
+[type="range"]:focus,
+[type="image"]:focus,
+select:focus {
+	outline: 1px dotted #000;
+	outline-offset: 0;
+}
+[type="range"]::-moz-focus-outer {
+	border: 0;
+}
+[type="checkbox"]:focus,
+[type="radio"]:focus {
+	outline: 1px dotted #000;
+	outline-style: auto;	/* webkit */
+}
+[type="range"]:-moz-focusring,
+[type="checkbox"]:-moz-focusring,
+[type="radio"]:-moz-focusring {
+	outline-width: 0;
+}
+button:focus,
+html [type="button"]:focus,
+[type="reset"]:focus,
+[type="submit"]:focus {
+	outline: 1px dotted #000;
+}
+:focus::-webkit-color-swatch,
+:focus::-webkit-file-upload-button {
+	outline: 1px dotted #000;
+}
+:focus::-ms-browse {
+	outline: 1px dotted #000;
+}
+button:hover,
+html [type="button"]:hover,
+[type="reset"]:hover,
+[type="submit"]:hover {
+	background-color: #e5f1fb;
+}
+::-webkit-file-upload-button:hover {
+	background-color: #e5f1fb;
+}
+::-ms-browse:hover {
+	background-color: #e5f1fb;
+}
