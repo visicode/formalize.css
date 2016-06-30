@@ -4,6 +4,37 @@
  * n. Comment.
  */
 
+a:focus {
+	outline: 1px dotted black;
+}
+[type="color"] {
+	background-color: #fff;
+}
+[type="file"] {
+	background-color: transparent;
+}
+[type="image"] {
+	display: inline-block;		/* Firefox */
+}
+[type="search"] {
+	-webkit-appearance: none;		/* iPhone */
+}
+select {
+	-webkit-appearance: menulist-button;	/* Mac Aqua off */
+}
+@supports (-ms-accelerator:true) {
+	select {
+		-webkit-appearance: menulist;		/* Revert for Edge */
+	}
+}
+textarea {
+	padding: 1px;
+	-webkit-appearance: textfield;		/* Safari */
+}
+:-ms-input-placeholder {
+	color: inherit;
+	opacity: 0.54;		/* /!\ Applied to whole input */
+}
 button,
 input:not([type="range"]):not([type="file"]):not([type="image"]),
 select,
