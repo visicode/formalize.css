@@ -3,7 +3,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Formalize CSS: UI tests</title>
-<link rel="stylesheet" href="https://github.com/necolas/normalize.css/raw/master/normalize.css" />
+<link rel="stylesheet" href="https://rawgit.com/necolas/normalize.css/master/normalize.css" />
 <link rel="stylesheet" href="formalize.css" />
 <style>
 	fieldset {
@@ -13,22 +13,22 @@
 		margin: 50px;
 		padding: 10px;
 	}
-	input,
+	input:not([type="checkbox"]):not([type="radio"]),
 	textarea,
 	button,
 	select {
-		width: 250px;
+		width: 50%;
 		padding: 20px;
 	}
 	[type="checkbox"],
 	[type="radio"] {
-		width: auto;
+		padding: 20px;
 	}
 </style>
 <form>
 	<fieldset>
-		Text: <input type="text" placeholder="text" /><br/>
-		Date (1): <input type="date" placeholder="date" style="height: 35px;" /><br/>
+		Text: <input type="text" /><br/>
+		Date (1): <input type="date" style="height: 35px;" /><br/>
 		DateTime: <input type="datetime" /><br/>
 		Number: <input type="number" /><br/>
 		Range: <input type="range" /><br/>
