@@ -12,6 +12,12 @@ input:not([type="range"]):not([type="file"]):not([type="image"]),
 select,
 textarea {
 	border: 1px solid #c0c0c0;
+	padding: 2px;	/* nothing on select on Safari */
+}
+[type="range"],
+[type="file"],
+[type="image"] {
+	border: 3px solid transparent;
 }
 [type="color"] {
 	background-color: #fff;
@@ -19,18 +25,16 @@ textarea {
 [type="file"] {
 	background-color: transparent;
 }
-button,
 [type="search"],
-html [type="button"],
-[type="reset"],
-[type="submit"] {
-	box-sizing: content-box;
+select {
+    box-sizing: content-box;
 }
 button,
 html [type="button"],
 [type="reset"],
 [type="submit"] {
 	background-color: #e1e1e1;
+	box-sizing: content-box;
 }
 ::-webkit-color-swatch {
 	border: 0;
@@ -56,37 +60,41 @@ input:focus,
 textarea:focus {
 	outline-width: 0;
 }
+button:focus,
 [type="range"]:focus,
 [type="image"]:focus,
+[type="checkbox"]:focus,
+[type="radio"]:focus,
+html [type="button"]:focus,
+[type="reset"]:focus,
+[type="submit"]:focus,
 select:focus {
 	outline: 1px dotted #000;
-	outline-offset: 0;
+	outline-offset: -1px;
+}
+[type="image"]:focus {
+	outline-offset: -4px;
 }
 [type="range"]::-moz-focus-outer {
 	border: 0;
 }
 [type="checkbox"]:focus,
 [type="radio"]:focus {
-	outline: 1px dotted #000;
-	outline-style: auto;	/* webkit */
+	outline-style: auto;	/* revert for webkit */
 }
 [type="range"]:-moz-focusring,
 [type="checkbox"]:-moz-focusring,
 [type="radio"]:-moz-focusring {
 	outline-width: 0;
 }
-button:focus,
-html [type="button"]:focus,
-[type="reset"]:focus,
-[type="submit"]:focus {
-	outline: 1px dotted #000;
-}
 :focus::-webkit-color-swatch,
 :focus::-webkit-file-upload-button {
 	outline: 1px dotted #000;
+	outline-offset: -1px;
 }
 :focus::-ms-browse {
 	outline: 1px dotted #000;
+	outline-offset: -1px;
 }
 /* Hover */
 button:hover,
