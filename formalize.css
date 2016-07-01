@@ -4,59 +4,125 @@
    ========================================================================== */
 
 /**
- * n. Comment.
+ * 1. Consistent style, width and color between all fields (opinionated).
+ * 2. Consistent padding size between all fields.
+ * 3. Allow setting the same width for all fields.
  */
 
 button,
 input,
 select,
 textarea {
-	border: 1px solid #c0c0c0;
-	padding: 2px;	/* nothing on select on Safari */
-	box-sizing: border-box;
+	border: 1px solid #c0c0c0; /* 1 */
+	padding: 2px; /* 2 */
+	box-sizing: border-box; /* 3 */
 }
+
+/**
+ * Revert to the initial values for some fields.
+ */
+
 [type="range"],
 [type="file"],
 [type="image"] {
 	border: 0;
 	padding: 0;
 }
+
+/**
+ * Consistent background color on Chrome and Firefox.
+ */
+
 [type="color"] {
 	background-color: #fff;
 }
+
+/**
+ * Consistent background color on Edge and IE.
+ */
+
 [type="file"] {
 	background-color: transparent;
 }
+
+/**
+ * Consistent background color for all browsers (opinionated).
+ */
+
 button,
 html [type="button"],
 [type="reset"],
 [type="submit"] {
 	background-color: #e1e1e1;
 }
+
+/**
+ * Remove the inside button border in Chrome.
+ */
+
 ::-webkit-color-swatch {
 	border: 0;
 }
+
+/**
+ * Remove the inside button border in Firefox.
+ */
+
 ::-moz-color-swatch {
 	border: 0;
 }
+
+/**
+ * Remove the inside button padding in Chrome.
+ */
+
 ::-webkit-color-swatch-wrapper {
 	padding: 0;
 }
+
+/**
+ * Remove the inside button padding in Firefox.
+ */
+
 ::-moz-color-swatch-wrapper {
 	padding: 0;
 }
+
+/**
+ * 1. Consistent style, width and color between all fields (same than above).
+ * 2. Consistent background color for all browsers (same than above).
+ */
+
 ::-webkit-file-upload-button {
-	border: 1px solid #c0c0c0;
-	background-color: #e1e1e1;
+	border: 1px solid #c0c0c0; /* 1 */
+	background-color: #e1e1e1; /* 2 */
 }
+
+/**
+ * Consistent style, width and color between all fields (same than above).
+ */
+
 ::-ms-browse {
 	border: 1px solid #c0c0c0;
 }
-/* Focus */
+
+/* Focus effect
+   ========================================================================== */
+
+/**
+ * Remove all focus outlines.
+ */
+
 input:focus,
 textarea:focus {
 	outline-width: 0;
 }
+
+/**
+ * 1. Add a focus outline for some fields only (opinionated).
+ * 2. Set the focus outline to be above the field border.
+ */
+
 button:focus,
 [type="range"]:focus,
 [type="image"]:focus,
@@ -66,31 +132,65 @@ html [type="button"]:focus,
 [type="reset"]:focus,
 [type="submit"]:focus,
 select:focus {
-	outline: 1px dotted #000;
-	outline-offset: -1px;
+	outline: 1px dotted #000; /* 1 */
+	outline-offset: -1px; /* 2 */
 }
+
+/**
+ * Remove the focus border in Firefox.
+ */
+
 [type="range"]::-moz-focus-outer {
 	border: 0;
 }
+
+/**
+ * Revert the webkit blur effect on focus in Safari for better visual effect.
+ */
+
 [type="checkbox"]:focus,
 [type="radio"]:focus {
-	outline-style: auto;	/* revert for webkit */
+	outline-style: auto;
 }
+
+/**
+ * Remove the focus outline in Firefox to only keep the original effect.
+ */
+
 [type="range"]:-moz-focusring,
 [type="checkbox"]:-moz-focusring,
 [type="radio"]:-moz-focusring {
 	outline-width: 0;
 }
+
+/**
+ * 1. Add a focus outline for color field (Chrome) and file selector field (Chrome & Safari) (same than above).
+ * 2. Set the focus outline to be above the field border.
+ */
+
 :focus::-webkit-color-swatch,
 :focus::-webkit-file-upload-button {
-	outline: 1px dotted #000;
-	outline-offset: -1px;
+	outline: 1px dotted #000; /* 1 */
+	outline-offset: -1px; /* 2 */
 }
+
+/**
+ * 1. Add a focus outline for file selector field in Edge and IE (same than above).
+ * 2. Set the focus outline to be above the field border.
+ */
+
 :focus::-ms-browse {
-	outline: 1px dotted #000;
-	outline-offset: -1px;
+	outline: 1px dotted #000; /* 1 */
+	outline-offset: -1px; /* 2 */
 }
-/* Hover */
+
+/* Hover effect
+   ========================================================================== */
+
+/**
+ * Consistent background color for all browsers (opinionated).
+ */
+
 button:hover,
 html [type="button"]:hover,
 [type="reset"]:hover,
