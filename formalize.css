@@ -4,29 +4,33 @@
    ========================================================================== */
 
 /**
- * 1. Consistent style, width and color between all fields (opinionated).
- * 2. Consistent padding size between all fields.
- * 3. Allow setting the same width for all fields.
+ * Allow setting the same width for all form fields.
+ */
+
+input,
+textarea {
+	box-sizing: border-box;
+}
+
+/**
+ * Consistent style, width and color between all fields (opinionated).
  */
 
 button,
 input,
 select,
 textarea {
-	border: 1px solid #c0c0c0; /* 1 */
-	padding: 2px; /* 2 */
-	box-sizing: border-box; /* 3 */
+	border: 1px solid #c0c0c0;
 }
 
 /**
- * Revert to the initial values for some fields.
+ * Revert border to the initial value for some fields.
  */
 
 [type="range"],
 [type="file"],
 [type="image"] {
 	border: 0;
-	padding: 0;
 }
 
 /**
@@ -46,7 +50,7 @@ textarea {
 }
 
 /**
- * Consistent background color for all browsers (opinionated).
+ * Consistent buttons background color for all browsers (opinionated).
  */
 
 button,
