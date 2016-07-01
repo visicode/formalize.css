@@ -13,11 +13,13 @@ select,
 textarea {
 	border: 1px solid #c0c0c0;
 	padding: 2px;	/* nothing on select on Safari */
+	box-sizing: border-box;
 }
 [type="range"],
 [type="file"],
 [type="image"] {
-	border-color: transparent;
+	border: 0;
+	padding: 0;
 }
 [type="color"] {
 	background-color: #fff;
@@ -25,16 +27,11 @@ textarea {
 [type="file"] {
 	background-color: transparent;
 }
-[type="search"],
-select {
-    box-sizing: content-box;
-}
 button,
 html [type="button"],
 [type="reset"],
 [type="submit"] {
 	background-color: #e1e1e1;
-	box-sizing: content-box;
 }
 ::-webkit-color-swatch {
 	border: 0;
@@ -71,9 +68,6 @@ html [type="button"]:focus,
 select:focus {
 	outline: 1px dotted #000;
 	outline-offset: -1px;
-}
-[type="image"]:focus {
-	outline-offset: -4px;
 }
 [type="range"]::-moz-focus-outer {
 	border: 0;
