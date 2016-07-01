@@ -18,11 +18,19 @@
 	button,
 	select {
 		width: 50%;
-		padding: 20px;
 	}
+	input:not([type="file"]):not([type="range"]):not([type="image"]),
+	textarea,
+	button {
+		padding: 6px;
+	}
+	[type="file"],
+	[type="range"],
+	[type="image"],
 	[type="checkbox"],
-	[type="radio"] {
-		padding: 20px;
+	[type="radio"],
+	select {
+		padding-top: 10px;	/* provocating wrong displays */
 	}
 </style>
 <form>
