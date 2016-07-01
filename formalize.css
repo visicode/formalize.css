@@ -17,8 +17,7 @@ textarea {
 [type="range"],
 [type="file"],
 [type="image"] {
-	border: 3px solid transparent;
-	padding: 0;
+	border-color: transparent;
 }
 [type="color"] {
 	background-color: #fff;
