@@ -2,12 +2,17 @@
 
 > A form normalizer to use in addition to [normalize.css](https://github.com/necolas/normalize.css)
 
+**Test**
+https://rawgit.com/yapaslfeu/formalize.css/master/test.html
+
+
 ## What does it do?
 
 * Surcharges [normalize.css](https://github.com/necolas/normalize.css) to normalize forms.
 * Corrects bugs and common browser inconsistencies.
 * Improves usability with subtle modifications.
 * Explains what code does using detailed comments.
+
 
 ## Browser support
 
@@ -18,6 +23,11 @@
 * Internet Explorer 8+
 * Opera (last two)
 * Safari 6+
+
+
+## Extended details and known issues
+
+See on test page.
 
 
 ## Acknowledgements
