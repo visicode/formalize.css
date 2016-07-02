@@ -262,6 +262,7 @@ a:focus {
 
 ::-webkit-input-placeholder {
 	color: #a9a9a9;
+	opacity: 1;
 }
 ::-moz-placeholder {
 	color: #a9a9a9;
