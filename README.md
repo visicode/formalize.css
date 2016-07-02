@@ -2,6 +2,7 @@
 
 > A form normalizer to use in addition to [normalize.css](https://github.com/necolas/normalize.css)
 
+
 **Live test**
 
 https://rawgit.com/yapaslfeu/formalize.css/master/test.html
@@ -28,7 +29,7 @@ https://rawgit.com/yapaslfeu/formalize.css/master/test.html
 
 ## Extended details and known issues
 
-See on test page.
+See bottom notes on test page.
 
 
 ## Acknowledgements
