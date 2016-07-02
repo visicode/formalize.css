@@ -228,3 +228,37 @@ html [type="button"]:hover,
 ::-ms-browse:hover {
 	background-color: #e5f1fb;
 }
+
+/* Normalize.css fixes
+   ========================================================================== */
+
+/**
+ * Consistent display mode in Firefox when image field is empty (#546).
+ */
+
+[type="image"] {
+	display: inline-block;
+}
+
+/**
+ * iPhone bug displaying search input with rounded angles before entering into the field (#582).
+ */
+
+[type="search"] {
+	-webkit-appearance: none;
+}
+
+/**
+ * Consistent placeholder color (#580).
+ */
+
+::-webkit-input-placeholder {
+	color: #a9a9a9;
+}
+::-moz-placeholder {
+	color: #a9a9a9;
+	opacity: 1;
+}
+:-ms-input-placeholder {
+	color: #a9a9a9;
+}
