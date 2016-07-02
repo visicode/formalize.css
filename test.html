@@ -13,40 +13,49 @@
 		margin: 50px;
 		padding: 10px;
 	}
-	input:not([type="checkbox"]):not([type="radio"]),
-	textarea,
-	button,
-	select {
+	form.sizes input:not([type="checkbox"]):not([type="radio"]),
+	form.sizes textarea,
+	form.sizes button,
+	form.sizes select {
 		width: 50%;
 	}
-	input:not([type="file"]):not([type="range"]):not([type="image"]),
-	textarea,
-	button {
+	form.sizes input:not([type="file"]):not([type="range"]):not([type="image"]),
+	form.sizes textarea,
+	form.sizes button {
 		padding: 6px;
 	}
-	[type="file"],
-	[type="range"],
-	[type="image"],
-	[type="checkbox"],
-	[type="radio"],
-	select {
+	form.paddings [type="file"],
+	form.paddings [type="range"],
+	form.paddings [type="image"],
+	form.paddings [type="checkbox"],
+	form.paddings [type="radio"],
+	form.paddings select {
 		padding-top: 10px;	/* provocating wrong displays */
 	}
+	#tools {
+		color: white;
+		background-color: navy;
+		left: 0;
+		bottom: 50px;
+		width: 100px;
+		height: 100px;
+		position: fixed;
+	}
 </style>
-<form>
+<form class="sizes">
 	<fieldset>
 		Text: <input type="text" /><br/>
-		Date (1): <input type="date" style="height: 35px;" /><br/>
+		Date (1): <input type="date" /><br/>
 		DateTime: <input type="datetime" /><br/>
 		Number: <input type="number" /><br/>
 		Range: <input type="range" /><br/>
-		Color (2): <input type="color" style="height: 35px;" /><br/>
+		Color (2): <input type="color" /><br/>
 		File (6): <input type="file" /><br/>
 		Image (3): <input type="image" /><br/>
-		Month (1): <input type="month" style="height: 35px;" /><br/>
+		Month (1): <input type="month" /><br/>
 		Password: <input type="password" /><br/>
 		Tel: <input type="tel" /><br/>
-		Time (1): <input type="time" style="height: 35px;" /><br/>
+		Time (1): <input type="time" /><br/>
 		URL: <input type="url" /><br/>
 		Week (4): <input type="week" /><br/>
 		Search: <input type="search" /><br/>
@@ -54,7 +63,7 @@
 		<input type="radio" /> Radio<br/>
 		<input type="checkbox" /> <span style="line-height: 75px;">Checkbox</span><br/>
 		<input type="radio" style="width: 50px; height: 75px;"/> Radio with size (5)<br/>
-		Combo (1b): <select style="height: 77px;"><option>item</option></select><br/>
+		Combo (1b): <select><option>item</option></select><br/>
 		<span style="vertical-align: -21px;">Textarea (7):</span> <textarea>Textarea</textarea><br/>
 		Buttons: <button>Button</button><br/>
 		<input type="button" value="Input button" /><br/>
@@ -62,14 +71,29 @@
 		<input type="reset" />
 	</fieldset>
 </form>
+<div id="tools">
+	<input id="sizes" type="checkbox" checked=checked /> Fixed sizes<br/>
+	<input id="paddings" type="checkbox" /> Extra paddings
+</div>
 <div>
 	<h2>List of known issues</h2>
-	(1): input is a combo on iPhone: paddings are not allowed -> forcing height<br/>
-	(1b): input is a combo on Mac: paddings are not allowed -> forcing height<br/>
-	(2): input has a lower height on Chrome & Firefox -> forcing height<br/>
+	(1): input is a combo on iPhone: paddings are not allowed -> need to force height<br/>
+	(1b): input is a combo on Mac: paddings are not allowed -> need to force height<br/>
+	(2): input has a lower height on Chrome & Firefox -> need to force height<br/>
 	(3): image input has a lower height on Safari and Firefox when empty<br/>
 	(4): week input is not recognized on iPhone<br/>
 	(5): checkbox and radio inputs are not resized on Mac & Firefox<br/>
 	(6): file input keeps the default focus style on Firefox (2px outline)<br/>
 	(7): span vertical-align = -padding-top - border-width-top
 </div>
+<script type="text/javascript" src="//code.jquery.com/jquery-2.2.3.min.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready (function ($) {
+		$('#sizes').click (function () {
+			$('form').toggleClass ('sizes');
+		});
+		$('#paddings').click (function () {
+			$('form').toggleClass ('paddings');
+		});
+	});
+</script>
