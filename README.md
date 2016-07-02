@@ -2,10 +2,11 @@
 
 > A form normalizer to use in addition to [normalize.css](https://github.com/necolas/normalize.css)
 
+ 
 
 **Live test**
 
-https://rawgit.com/yapaslfeu/formalize.css/master/test.html
+https://rawgit.com/visicode/formalize.css/master/test.html
 
 
 ## What does it do?
@@ -34,4 +35,4 @@ See bottom notes on test page.
 
 ## Acknowledgements
 
-Formalize.css is a project by [Alexandre Gastaud](https://github.com/yapaslfeu), inspired by the [normalize.css](https://github.com/necolas/normalize.css) project created by [Nicolas Gallagher](https://github.com/necolas) and [Jonathan Neal](https://github.com/jonathantneal).
+Formalize.css is a project by [Alexandre Gastaud](https://github.com/visicode), inspired by the [normalize.css](https://github.com/necolas/normalize.css) project created by [Nicolas Gallagher](https://github.com/necolas) and [Jonathan Neal](https://github.com/jonathantneal).
