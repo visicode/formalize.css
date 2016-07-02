@@ -19,7 +19,7 @@
 	form.widths select {
 		width: 50%;
 	}
-	form.heights input,
+	form.heights input:not([type="checkbox"]):not([type="radio"]),
 	form.heights textarea,
 	form.heights button,
 	form.heights select {
@@ -27,16 +27,9 @@
 	}
 	form.paddings input,
 	form.paddings textarea,
-	form.paddings button {
-		padding: 6px;
-	}
-	form.paddings [type="file"],
-	form.paddings [type="range"],
-	form.paddings [type="image"],
-	form.paddings [type="checkbox"],
-	form.paddings [type="radio"],
+	form.paddings button,
 	form.paddings select {
-		padding-bottom: 0;	/* provocating wrong displays */
+		padding: 6px;
 	}
 	#tools {
 		color: white;
