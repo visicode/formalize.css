@@ -4,12 +4,14 @@
    ========================================================================== */
 
 /**
- * Allow setting the same width for all form fields.
+ * 1. Consistent paddings.
+ * 2. Allow setting the same width for all form fields.
  */
 
 input,
 textarea {
-	box-sizing: border-box;
+	padding: 1px; /* 1 */
+	box-sizing: border-box; /* 2 */
 }
 
 /**
@@ -24,17 +26,30 @@ textarea {
 }
 
 /**
- * Revert border to the initial value for some fields.
+ * Revert to initial values for some fields.
  */
 
 [type="range"],
 [type="file"],
 [type="image"] {
 	border: 0;
+	padding: 0;
 }
 
 /**
- * Consistent background color on Chrome and Firefox.
+ * Consistent vertical alignments.
+ */
+
+[type="range"],
+[type="color"],
+[type="image"],
+[type="checkbox"],
+[type="radio"] {
+	vertical-align: middle;
+}
+
+/**
+ * Consistent background color on Chrome.
  */
 
 [type="color"] {
@@ -50,14 +65,16 @@ textarea {
 }
 
 /**
- * Consistent buttons background color for all browsers (opinionated).
+ * 1. Consistent buttons background color for all browsers (opinionated).
+ * 2. Consistent paddings.
  */
 
 button,
 html [type="button"],
 [type="reset"],
 [type="submit"] {
-	background-color: #e1e1e1;
+	background-color: #e1e1e1; /* 1 */
+	padding: 1px 6px; /* 2 */
 }
 
 /**
