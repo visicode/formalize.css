@@ -233,6 +233,14 @@ html [type="button"]:hover,
    ========================================================================== */
 
 /**
+ * Consistent links focus effect (#577).
+ */
+
+a:focus {
+	outline: 1px dotted #000;
+}
+
+/**
  * Consistent display mode in Firefox when image field is empty (#546).
  */
 
