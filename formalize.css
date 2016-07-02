@@ -5,7 +5,7 @@
 
 /**
  * 1. Consistent paddings.
- * 2. Allow setting the same width for all form fields.
+ * 2. Allow setting the same size for all form fields.
  */
 
 input,
@@ -149,7 +149,7 @@ textarea:focus {
 
 /**
  * 1. Add a focus outline for some fields only (opinionated).
- * 2. Set the focus outline to be above the field border.
+ * 2. Set the focus outline to be just around the field border.
  */
 
 button:focus,
@@ -162,7 +162,7 @@ html [type="button"]:focus,
 [type="submit"]:focus,
 select:focus {
 	outline: 1px dotted #000; /* 1 */
-	outline-offset: -1px; /* 2 */
+	outline-offset: 0; /* 2 */
 }
 
 /**
@@ -193,24 +193,20 @@ select:focus {
 }
 
 /**
- * 1. Add a focus outline for color field (Chrome) and file selector field (Chrome & Safari) (same than above).
- * 2. Set the focus outline to be above the field border.
+ * Add a focus outline for color field (Chrome) and file selector field (Chrome & Safari) (same than above).
  */
 
 :focus::-webkit-color-swatch,
 :focus::-webkit-file-upload-button {
-	outline: 1px dotted #000; /* 1 */
-	outline-offset: -1px; /* 2 */
+	outline: 1px dotted #000;
 }
 
 /**
- * 1. Add a focus outline for file selector field in Edge and IE (same than above).
- * 2. Set the focus outline to be above the field border.
+ * Add a focus outline for file selector field in Edge and IE (same than above).
  */
 
 :focus::-ms-browse {
-	outline: 1px dotted #000; /* 1 */
-	outline-offset: -1px; /* 2 */
+	outline: 1px dotted #000;
 }
 
 /* Hover effect
