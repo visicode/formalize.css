@@ -20,16 +20,24 @@
 		width: 50%;
 	}
 	form.heights input:not([type="checkbox"]):not([type="radio"]),
-	form.heights textarea,
 	form.heights button,
 	form.heights select {
 		height: 50px;
+	}
+	form.heights textarea {
+		height: 150px;
+	}
+	form.heights .textarea_label {
+		vertical-align: -1px;	/* -padding-top */
 	}
 	form.paddings input,
 	form.paddings textarea,
 	form.paddings button,
 	form.paddings select {
 		padding: 6px;
+	}
+	form.heights.paddings .textarea_label {
+		vertical-align: -6px;
 	}
 	#tools {
 		color: white;
@@ -62,7 +70,7 @@
 		<input type="checkbox" /> <span style="line-height: 75px;">Checkbox</span><br/>
 		<input type="radio" style="width: 50px; height: 75px;"/> Radio with size (5)<br/>
 		Combo (1b): <select><option>item</option></select><br/>
-		<span style="vertical-align: -21px;">Textarea (7):</span> <textarea>Textarea</textarea><br/>
+		<span class="textarea_label">Textarea:</span> <textarea>Textarea</textarea><br/>
 		Buttons: <button>Button</button><br/>
 		<input type="button" value="Input button" /><br/>
 		<input type="submit" /><br/>
@@ -83,7 +91,6 @@
 	(4): week input is not recognized on iPhone<br/>
 	(5): checkbox and radio inputs are not resized on Mac & Firefox<br/>
 	(6): file input keeps the default focus style on Firefox (2px outline)<br/>
-	(7): span vertical-align = -padding-top - border-width-top
 </div>
 <script type="text/javascript" src="//code.jquery.com/jquery-2.2.3.min.js"></script>
 <script type="text/javascript">
