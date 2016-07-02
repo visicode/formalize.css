@@ -6,6 +6,25 @@
 <link rel="stylesheet" href="//rawgit.com/necolas/normalize.css/master/normalize.css" />
 <link rel="stylesheet" href="formalize.css" />
 <style>
+	/* Test */
+	[type="image"] {
+		display: inline-block;
+	}
+	[type="search"] {
+		-webkit-appearance: none;
+	}
+	::-webkit-input-placeholder {
+		Xcolor: #a9a9a9;
+		Xopacity: 1;
+	}
+	::-moz-placeholder {
+		Xcolor: #a9a9a9;
+		Xopacity: 1;
+	}
+	:-ms-input-placeholder {
+		Xcolor: #a9a9a9;
+	}
+
 	fieldset {
 		background-color: lightgrey;
 		font-size: 30px;
@@ -50,7 +69,7 @@
 </style>
 <form class="sizes">
 	<fieldset>
-		Text: <input type="text" /><br/>
+		Text: <input type="text" placeholder="placeholder" /><br/>
 		Date (1): <input type="date" /><br/>
 		DateTime: <input type="datetime" /><br/>
 		Number: <input type="number" /><br/>
