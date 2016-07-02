@@ -4,7 +4,7 @@
 
 ## What does it do?
 
-* Surcharges [normalize.css](https://github.com/necolas/normalize.css) to normalize form styles.
+* Surcharges [normalize.css](https://github.com/necolas/normalize.css) to normalize forms.
 * Corrects bugs and common browser inconsistencies.
 * Improves usability with subtle modifications.
 * Explains what code does using detailed comments.
