@@ -49,6 +49,14 @@ textarea {
 }
 
 /**
+ * Allow correct vertical alignment with field label.
+ */
+
+textarea {
+	vertical-align: text-top;
+}
+
+/**
  * Consistent background color on Chrome.
  */
 
