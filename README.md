@@ -4,7 +4,7 @@
 
  
 
-**Live test**
+**Test page**
 
 https://rawgit.com/visicode/formalize.css/master/test.html
 
