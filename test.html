@@ -33,10 +33,10 @@
 	form.paddings select {
 		padding: 6px;
 	}
-	.textarea_label {
+	label[for="textarea"] {
 		vertical-align: -2px;	/* - padding-top - border-top */
 	}
-	form.paddings .textarea_label {
+	form.paddings label[for="textarea"] {
 		vertical-align: -7px;
 	}
 	#tools {
@@ -70,7 +70,7 @@
 		<input type="checkbox" /> <span style="line-height: 75px;">Checkbox</span><br/>
 		<input type="radio" style="width: 50px; height: 75px;"/> Radio with size (5)<br/>
 		Combo (1b): <select><option>item</option></select><br/>
-		<span class="textarea_label">Textarea:</span> <textarea>Textarea</textarea><br/>
+		<label for="textarea">Textarea:</label> <textarea id="textarea">Textarea</textarea><br/>
 		Buttons: <button>Button</button><br/>
 		<input type="button" value="Input button" /><br/>
 		<input type="submit" /><br/>
