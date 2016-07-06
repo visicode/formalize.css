@@ -135,6 +135,25 @@ html [type="button"],
 	border: 1px solid #c0c0c0;
 }
 
+/* Placeholders
+   ========================================================================== */
+
+/**
+ * 1. Consistent placeholder color.
+ * 2. Correct Firefox opacity.
+ */
+
+::-webkit-input-placeholder {
+	color: #a9a9a9; /* 1 */
+}
+::-moz-placeholder {
+	color: #a9a9a9; /* 1 */
+	opacity: 1; /* 2 */
+}
+:-ms-input-placeholder {
+	color: #a9a9a9; /* 1 */
+}
+
 /* Focus effect
    ========================================================================== */
 
@@ -254,22 +273,4 @@ a:focus {
 
 [type="search"] {
 	-webkit-appearance: none;
-}
-
-/**
- * 1. Consistent placeholder color (#580).
- * 2. Revert opacity from normalize.css
- * 3. Correct Firefox opacity.
- */
-
-::-webkit-input-placeholder {
-	color: #a9a9a9; /* 1 */
-	opacity: 1; /* 2 */
-}
-::-moz-placeholder {
-	color: #a9a9a9; /* 1 */
-	opacity: 1; /* 3 */
-}
-:-ms-input-placeholder {
-	color: #a9a9a9; /* 1 */
 }
