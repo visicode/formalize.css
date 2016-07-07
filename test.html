@@ -13,6 +13,9 @@
 		margin: 50px;
 		padding: 10px;
 	}
+	label {
+		vertical-align: -2px;	/* -padding-top - border-top */
+	}
 	form.widths input:not([type="checkbox"]):not([type="radio"]),
 	form.widths textarea,
 	form.widths button,
@@ -33,10 +36,7 @@
 	form.paddings select {
 		padding: 6px;
 	}
-	label[for="textarea"] {
-		vertical-align: -2px;	/* - padding-top - border-top */
-	}
-	form.paddings label[for="textarea"] {
+	form.paddings label {
 		vertical-align: -7px;
 	}
 	#tools {
