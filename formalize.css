@@ -4,14 +4,16 @@
    ========================================================================== */
 
 /**
- * 1. Consistent paddings.
- * 2. Allow setting the same size for all form fields.
+ * Revert font family and line height to 'inherit'.
  */
 
+button,
 input,
+optgroup,
+select,
 textarea {
-	padding: 1px; /* 1 */
-	box-sizing: border-box; /* 2 */
+	font-family: inherit;
+	line-height: inherit;
 }
 
 /**
@@ -23,6 +25,17 @@ input,
 select,
 textarea {
 	border: 1px solid #c0c0c0;
+}
+
+/**
+ * 1. Consistent paddings.
+ * 2. Allow setting the same size for all form fields.
+ */
+
+input,
+textarea {
+	padding: 1px; /* 1 */
+	box-sizing: border-box; /* 2 */
 }
 
 /**
