@@ -1,10 +1,20 @@
-/*! formalize.css v0.0.1 | MIT License | github.com/visicode/formalize.css */
+/*! formalize.css v0.0.2 | MIT License | github.com/visicode/formalize.css */
 
 /* To include after normalize.css (https://github.com/necolas/normalize.css)
    ========================================================================== */
 
 /**
- * Revert font family and line height to 'inherit'.
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+
+fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * Set font and line height to 'inherit'.
  */
 
 button,
@@ -12,7 +22,7 @@ input,
 optgroup,
 select,
 textarea {
-	font-family: inherit;
+	font: inherit;
 	line-height: inherit;
 }
 
@@ -265,9 +275,13 @@ html [type="button"]:hover,
    ========================================================================== */
 
 /**
- * Consistent links focus effect (#577).
+ * Consistent links effects (#577).
  */
 
+a:active,
+a:hover {
+	outline-width: 0;
+}
 a:focus {
 	outline: 1px dotted #000;
 }
