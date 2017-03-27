@@ -10,7 +10,7 @@ https://rawgit.com/visicode/formalize.css/master/test.html
 
 **Download**
 
-https://github.com/visicode/formalize.css/latest/formalize.css
+https://raw.githubusercontent.com/visicode/formalize.css/master/formalize.css
 
 
 ## What does it do?
