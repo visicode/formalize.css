@@ -24,6 +24,7 @@ https://rawgit.com/visicode/formalize.css/master/test.html
 * Firefox (last two)
 * Firefox ESR
 * Internet Explorer 8+
+* iOS Safari (last two)
 * Opera (last two)
 * Safari 6+
 
