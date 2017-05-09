@@ -278,10 +278,6 @@ html [type="button"]:hover,
  * Consistent links effects (#577).
  */
 
-a:active,
-a:hover {
-	outline-width: 0;
-}
 a:focus {
 	outline: 1px dotted #000;
 }
