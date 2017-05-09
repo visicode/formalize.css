@@ -1,20 +1,19 @@
-/*! formalize.css v0.0.2 | MIT License | github.com/visicode/formalize.css */
+/*! formalize.css v0.0.3 | MIT License | github.com/visicode/formalize.css */
 
 /* To include after normalize.css (https://github.com/necolas/normalize.css)
    ========================================================================== */
 
 /**
- * Change the border, margin, and padding in all browsers (opinionated).
+ * Change the border and margin in all browsers (opinionated).
  */
 
 fieldset {
 	border: 1px solid #c0c0c0;
 	margin: 0 2px;
-	padding: 0.35em 0.625em 0.75em;
 }
 
 /**
- * Set font and line height to 'inherit'.
+ * Set font family and line height to 'inherit'.
  */
 
 button,
@@ -22,7 +21,7 @@ input,
 optgroup,
 select,
 textarea {
-	font: inherit;
+	font-family: inherit;
 	line-height: inherit;
 }
 
@@ -141,8 +140,8 @@ html [type="button"],
 }
 
 /**
- * 1. Consistent style, width and color between all fields (same than above).
- * 2. Consistent background color for all browsers (same than above).
+ * 1. Consistent style, width and color between all fields (opinionated, same than above).
+ * 2. Consistent background color for all browsers (opinionated, same than above).
  */
 
 ::-webkit-file-upload-button {
@@ -151,7 +150,7 @@ html [type="button"],
 }
 
 /**
- * Consistent style, width and color between all fields (same than above).
+ * Consistent style, width and color between all fields (opinionated, same than above).
  */
 
 ::-ms-browse {
@@ -162,7 +161,7 @@ html [type="button"],
    ========================================================================== */
 
 /**
- * 1. Consistent placeholder color.
+ * 1. Consistent placeholder color (opinionated).
  * 2. Correct Firefox opacity.
  */
 
