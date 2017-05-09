@@ -6,4 +6,4 @@
 
 ### 0.0.1 (June 30, 2016)
 
-* Very first version
+* Very first release
