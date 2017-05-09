@@ -2,7 +2,6 @@
 
 > A form normalizer to use in addition to [normalize.css](https://github.com/necolas/normalize.css)
 
- 
 
 **Test page**
 
@@ -34,7 +33,12 @@ https://raw.githubusercontent.com/visicode/formalize.css/master/formalize.css
 * Safari 6+
 
 
-## Extended details and known issues
+## Extended details
+
+You need to include [normalize.css](https://github.com/necolas/normalize.css) in your project.
+
+
+## Known issues
 
 See bottom notes on [test page](https://rawgit.com/visicode/formalize.css/master/test.html).
 
