@@ -23,14 +23,12 @@ https://raw.githubusercontent.com/visicode/formalize.css/master/formalize.css
 
 ## Browser support
 
-* Chrome (last two)
-* Edge (last two)
-* Firefox (last two)
-* Firefox ESR
-* Internet Explorer 8+
-* iOS Safari (last two)
-* Opera (last two)
-* Safari 6+
+* Chrome
+* Edge
+* Firefox ESR+
+* Internet Explorer 10+
+* Safari 8+
+* Opera
 
 
 ## Extended details
