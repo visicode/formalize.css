@@ -1,4 +1,4 @@
-/*! formalize.css v0.0.3 | MIT License | github.com/visicode/formalize.css */
+/*! formalize.css v1.8.0 | MIT License | github.com/visicode/formalize.css */
 
 /* To include after normalize.css (https://github.com/necolas/normalize.css)
    ========================================================================== */
@@ -13,7 +13,7 @@ fieldset {
 }
 
 /**
- * Set font family and line height to 'inherit'.
+ * Set line height to 'inherit'.
  */
 
 button,
@@ -21,7 +21,6 @@ input,
 optgroup,
 select,
 textarea {
-	font-family: inherit;
 	line-height: inherit;
 }
 
@@ -100,7 +99,7 @@ textarea {
  */
 
 button,
-html [type="button"],
+[type="button"],
 [type="reset"],
 [type="submit"] {
 	background-color: #e1e1e1; /* 1 */
@@ -198,7 +197,7 @@ button:focus,
 [type="image"]:focus,
 [type="checkbox"]:focus,
 [type="radio"]:focus,
-html [type="button"]:focus,
+[type="button"]:focus,
 [type="reset"]:focus,
 [type="submit"]:focus,
 select:focus {
@@ -258,7 +257,7 @@ select:focus {
  */
 
 button:hover,
-html [type="button"]:hover,
+[type="button"]:hover,
 [type="reset"]:hover,
 [type="submit"]:hover {
 	background-color: #e5f1fb;
