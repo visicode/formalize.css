@@ -33,7 +33,7 @@ https://raw.githubusercontent.com/visicode/formalize.css/master/formalize.css
 
 ## Extended details
 
-You need to include [normalize.css](https://github.com/necolas/normalize.css) in your project.
+To be included right after [normalize.css](https://github.com/necolas/normalize.css).
 
 
 ## Known issues

@@ -1,5 +1,10 @@
 # Changes to formalize.css
 
+### 1.8.1 (June 4, 2023)
+
+* New file formalize.min.css
+* Copyright and some texts updates
+
 ### 1.8.0 (February 12, 2018)
 
 * Adjustments after Normalize update to v8.0.0
