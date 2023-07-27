@@ -34,6 +34,11 @@ https://raw.githubusercontent.com/visicode/formalize.css/master/formalize.min.cs
 
 To be included right after [normalize.css](https://github.com/necolas/normalize.css).
 
+```html
+<link rel="stylesheet" href="normalize.min.css" />
+<link rel="stylesheet" href="formalize.min.css" />
+```
+
 
 ## Known issues
 
