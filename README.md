@@ -4,11 +4,11 @@
 
 **Test page**
 
-https://visicode.github.io/formalize.css/test.html
+[https://visicode.github.io/formalize.css/test.html](https://visicode.github.io/formalize.css/test.html)
 
 **Download**
 
-https://raw.githubusercontent.com/visicode/formalize.css/master/formalize.min.css
+[https://raw.githubusercontent.com/visicode/formalize.css/master/formalize.min.css](https://raw.githubusercontent.com/visicode/formalize.css/master/formalize.min.css)
 
 
 ## What does it do?
