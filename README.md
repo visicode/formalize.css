@@ -4,11 +4,11 @@
 
 **Test page**
 
-https://raw.githack.com/visicode/formalize.css/master/test.html
+https://visicode.github.io/formalize.css/test.html
 
 **Download**
 
-https://raw.githubusercontent.com/visicode/formalize.css/master/formalize.min.css
+https://raw.githubusercontent.com/visicode/formalize.css/refs/heads/master/formalize.min.css
 
 
 ## What does it do?
@@ -42,7 +42,7 @@ To be included right after [normalize.css](https://github.com/necolas/normalize.
 
 ## Known issues
 
-See bottom notes on [test page](https://raw.githack.com/visicode/formalize.css/master/test.html).
+See bottom notes on [test page](https://visicode.github.io/formalize.css/test.html).
 
 
 ## Acknowledgements
